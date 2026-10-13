@@ -29,3 +29,21 @@ Open your terminal and clone your new repository, then navigate into the folder:
 ```bash
 git clone [https://github.com/lilianavalles/qp_confluence_to_md.git](https://github.com/YOUR-GITHUB-USERNAME/qp_confluence_to_md.git)
 cd qp_confluence_to_md
+```
+
+### 2. Install Dependencies
+Install the required Python libraries using pip:
+```pip install -r requirements.txt
+
+### Step 3: Configure Your Environment Variables
+Bash
+cp .env.example .env
+(After running this, open your new .env file in VS Code and fill in your actual Confluence Personal Access Token).
+
+### Step 4: Run the Exporter
+Bash
+python export_all_linked.py
+
+### Step 5: Updating Content (When Confluence Changes)
+Bash
+python export_all_linked.py
