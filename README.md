@@ -34,16 +34,21 @@ cd qp_confluence_to_md
 ### 2. Install Dependencies
 Install the required Python libraries using pip:
 ```pip install -r requirements.txt
+```
 
 ### Step 3: Configure Your Environment Variables
-Bash
+```Bash
 cp .env.example .env
+```
 (After running this, open your new .env file in VS Code and fill in your actual Confluence Personal Access Token).
 
 ### Step 4: Run the Exporter
-Bash
+``` Bash
 python export_all_linked.py
-
-### Step 5: Updating Content (When Confluence Changes)
-Bash
-python export_all_linked.py
+```
+### Step 5: Manual fixes
+``` Bash
+The files will be produced but there are still some changes that need to be manually amended as follows:
+- remove headers
+- remove reference to internal teams or reports
+```
